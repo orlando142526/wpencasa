@@ -6,5 +6,5 @@
 	 */
 // Para poder añadir una imagen
 add_theme_support( 'post-thumbnails' );
-
+//cambio
 //Aqui colocamos functions para que nos aparezca en nuestro wordpress la opcion de imagen destacada.
