@@ -10,33 +10,38 @@
 <?php get_header(); ?>
 
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-    <h3><?php the_title(); ?></h3>
-
-    <?php the_content(); ?>
-    <?php wp_link_pages(); ?>
-    <?php edit_post_link(); ?>
-
-<?php endwhile; ?>
-
+<?php
+if ( have_posts() ) :
+    while ( have_posts() ) :
+        the_post();
+        the_title( '<h3> Titulo: ', '</h3>' );
+        //con thumbnail podemos cambiar el tamaño de la imagen
+        the_post_thumbnail(array(400,400));
+        ?>
+ <h1> <?php the_excerpt(); ?> </h1>
     <?php
+        the_content();
+        wp_link_pages();
+        edit_post_link();
+     endwhile;
+
+
     if ( get_next_posts_link() ) {
         next_posts_link();
-    }
-    ?>
-    <?php
+    };
+
+
     if ( get_previous_posts_link() ) {
         previous_posts_link();
-    }
-    ?>
+    };
 
-<?php else: ?>
 
-    <p>No posts found. :(</p>
 
-<?php endif; ?>
-<?php get_footer(); ?>
-<?php wp_footer(); ?>
+ else:
+
+    echo "<p>No posts found. :(</p>";
+endif;
+ ?>
+
 </body>
 </html>
