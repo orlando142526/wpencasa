@@ -13,6 +13,7 @@
 <?php
 if ( have_posts() ) :
     while ( have_posts() ) :
+        the_shortlink();
         the_post();
         the_title( '<h3> Titulo: ', '</h3>' );
         //con thumbnail podemos cambiar el tamaño de la imagen

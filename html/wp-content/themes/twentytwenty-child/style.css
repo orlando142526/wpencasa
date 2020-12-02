@@ -1,6 +1,7 @@
 /*
 Theme Name: DAM child
 Text Domain: twentytwenty
+Template: twentytwenty
 Version: 1.5
 Requires at least: 4.7
 Requires PHP: 5.2.4
@@ -273,7 +274,7 @@ Inter variable font. Usage:
 
 @media ( prefers-reduced-motion: reduce ) {
 
-    * {
+    * {MySQL - wordpress@localhost
         animation-duration: 0s !important;
         transition-duration: 0s !important;
     }
