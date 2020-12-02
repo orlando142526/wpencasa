@@ -16,7 +16,7 @@ get_header();
 
             <h1 class="entry-title"><?php _e( 'Page Not Found', 'twentytwenty' ); ?></h1>
 
-            <div class="intro-text"><p><?php _e( 'fdhgdfhfdhgfh caca No se ha podido encontrar la página que buscas. No existe.', 'twentytwenty' ); ?></p></div>
+            <div class="intro-text"><p><?php _e( 'No se ha podido encontrar la página que buscas. No existe.', 'twentytwenty' ); ?></p></div>
 
             <?php
             get_search_form(
